@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgba(140, 122, 180, 0.139);
+
+        }
+        ul{
+            display: flex;
+            padding: 20px;
+            margin: 20px;
+            list-style-type: none;
+        }
+        li{
+            padding: 10px;            
+            font-size: 30px;
+            font-weight: 500;
+        }
+        a{
+           text-decoration: none;
+           color: rgb(255, 255, 255);
+           background-color: blue;
+           padding: 10px;
+           border-radius: 10px;
+        }
+        a:hover{        
+           color: rgb(255, 255, 255);
+           background-color: rgb(123, 66, 66);
+           padding: 10px;
+           border-radius: 10px;
+
+        }
+        p{
+            font-size: 25px;
+        }
+
+        main{
+            margin: 40px;
+            width: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/practice_app/blogs/">Blogs</a></li>
+ 
+        </ul>
+    </header>
+    
+    <main>
+        <h1>This is blogs content.</h1>       
+
+        <p>Join Filter :  {{ day | join:" // " }}</p>
+        <p>Date Filter :  {{ dt | date:"D d M Y" }}</p>
+        <p>Time Filter :  {{ tm | time:"H:i" }}</p>
+        <p>Add Filter :  {{ nm | capfirst }}</p>
+        <p>Cut Filter :  {{ cutting | cut:"-" }}</p>
+        <p>Dictsort Filter :  {{ dictsorts | dictsort:"age" }}</p>
+        <p>First Filter :  {{ firsts | first }}</p>
+        <p>Last Filter :  {{ lasts | last }}</p>
+        <p>Length Filter :  {{ len | length }}</p>
+        <p>Linenumbers Filter :  {{ linenum | linenumbers }}</p>
+        <p>Lower Filter :  {{ low | lower }}</p>
+        <p>Upper Filter :  {{ up | upper }}</p>
+        <p>Title Filter :  {{ titles | title }}</p>
+        <p>Random Filter :  {{ randm | random }}</p>
+        <p>Slice Filter :  {{ some_list | slice:":2" }}</p>
+        <p>Truncatechars Filter :  {{ trances | truncatechars:15 }}</p>
+        <p>Truncatewords Filter :  {{ trancewrd | truncatewords:2 }}</p>
+        <p>Wordcount Filter :  {{ wrdcnt | wordcount }}</p>
+        <p>Striptags Filter :  {{ strip | striptags }}</p>
+        <p>Pluralize Filter :  You have {{ num_message }} message{{ num_message | pluralize:"s." }}</p>
+        <p>Make_list Filter :  {{ 'Bangladesh' | make_list }}</p>
+        
+
+
+    </main>
+    
+</body>
+</html>

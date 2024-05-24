@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgba(140, 122, 180, 0.139);
+
+        }
+        ul{
+            display: flex;
+            padding: 20px;
+            margin: 20px;
+            list-style-type: none;
+        }
+        li{
+            padding: 10px;            
+            font-size: 30px;
+            font-weight: 500;
+        }
+        a{
+           text-decoration: none;
+           color: rgb(255, 255, 255);
+           background-color: blue;
+           padding: 10px;
+           border-radius: 10px;
+        }
+        a:hover{        
+           color: rgb(255, 255, 255);
+           background-color: rgb(123, 66, 66);
+           padding: 10px;
+           border-radius: 10px;
+
+        }
+    </style>
+    
 </head>
 <body>
-    <h1><a href="/">Home</a></h1>
-    <h1><a href="/practice_app/">Blog</a></h1>   
+    <header>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/practice_app/blogs/">Blogs</a></li>
+    
+        </ul>
+    </header>   
     
 </body>
 </html>
